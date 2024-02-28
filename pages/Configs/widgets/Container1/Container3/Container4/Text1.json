@@ -9,8 +9,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 3,
-    "bottomRow": 8,
+    "topRow": 2,
+    "bottomRow": 7,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -20,7 +20,7 @@
     "fontFamily": "Rubik",
     "parentColumnSpace": 7.1171875,
     "dynamicTriggerPathList": [],
-    "leftColumn": 12,
+    "leftColumn": 13,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "borderRadius"}
@@ -30,7 +30,7 @@
     "text": "HORÁRIO DE FUNCIONAMENTO",
     "key": "9ztmzt9shu",
     "isDeprecated": false,
-    "rightColumn": 54,
+    "rightColumn": 55,
     "backgroundColor": "",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",
@@ -49,11 +49,11 @@
     "isLoading": false,
     "mobileTopRow": 3,
     "responsiveBehavior": "fill",
-    "originalTopRow": 3,
+    "originalTopRow": 2,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 25,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 8,
+    "originalBottomRow": 7,
     "fontSize": "1.875rem",
     "minDynamicHeight": 4
 }

@@ -1,6 +1,6 @@
 {
     "mobileBottomRow": 25,
-    "widgetName": "CheckboxGroup1",
+    "widgetName": "CheckboxGroupTriggerForEvents",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.9522c5e7f896ce165fcd1dbba438daff.svg",
     "displayName": "Checkbox Group",
     "labelText": "",
@@ -24,31 +24,31 @@
     "options": [
         {
             "label": "DOM",
-            "value": "DOM"
+            "value": "dom"
         },
         {
             "label": "SEG",
-            "value": "SEG"
+            "value": "seg"
         },
         {
             "label": "TER",
-            "value": "TER"
+            "value": "ter"
         },
         {
             "label": "QUA",
-            "value": "QUA"
+            "value": "qua"
         },
         {
             "label": "QUI",
-            "value": "QUI"
+            "value": "qui"
         },
         {
             "label": "SEX",
-            "value": "SEX"
+            "value": "sex"
         },
         {
             "label": "SAB",
-            "value": "SAB"
+            "value": "sab"
         }
     ],
     "labelTextColor": "#ffffff",

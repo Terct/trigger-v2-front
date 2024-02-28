@@ -6,7 +6,12 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "variables": [],
+    "variables": [
+      {
+        "name": "data",
+        "value": "[]"
+      }
+    ],
     "userPermissions": []
   },
   "id": "Configs_Functions",

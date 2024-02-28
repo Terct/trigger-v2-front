@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\n\t\"jwt\":{{appsmith.store.jwt}},\n\t\"events\": {{appsmith.store.events}}\n\t\n\n}",
+      "body": "{\n\n\t\"jwt\":{{appsmith.store.jwt}},\n\t\"data\": {{Functions.data}}\n\t\n\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
@@ -51,7 +51,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.events",
+      "Functions.data",
       "appsmith.store.jwt"
     ],
     "userSetOnLoad": false,

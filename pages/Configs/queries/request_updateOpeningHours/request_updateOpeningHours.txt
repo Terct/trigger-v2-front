@@ -1,7 +1,7 @@
 {
 
 	"jwt":{{appsmith.store.jwt}},
-	"events": {{appsmith.store.events}}
+	"data": {{Functions.data}}
 	
 
 }

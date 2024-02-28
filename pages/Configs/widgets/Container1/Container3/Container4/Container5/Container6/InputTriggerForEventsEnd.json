@@ -1,7 +1,7 @@
 {
-    "boxShadow": "none",
+    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 4,
+    "topRow": 11,
     "labelWidth": 5,
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
@@ -13,6 +13,7 @@
     ],
     "labelStyle": "",
     "inputType": "TEXT",
+    "maxChars": "5",
     "isDisabled": false,
     "isRequired": false,
     "dynamicHeight": "FIXED",
@@ -25,9 +26,10 @@
         "Inputs"
     ],
     "isLoading": false,
+    "regex": "^([01]?[0-9]|2[0-3]):[0-5][0-9]$",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileBottomRow": 10,
-    "widgetName": "Input1",
+    "widgetName": "InputTriggerForEventsEnd",
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -35,7 +37,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 11,
+    "bottomRow": 18,
     "parentRowSpace": 10,
     "autoFocus": false,
     "hideCard": false,
@@ -47,9 +49,9 @@
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
     "rightColumn": 61,
-    "widgetId": "ct51venxjj",
+    "widgetId": "8sw07s00zi",
     "minWidth": 450,
-    "label": "HORARIO INICIAL",
+    "label": "HORARIO FINAL (HH:MM)",
     "parentId": "nbdyvrlvd8",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
@@ -58,6 +60,6 @@
     "mobileLeftColumn": 30,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "",
+    "defaultText": "00:00",
     "minDynamicHeight": 4
 }
