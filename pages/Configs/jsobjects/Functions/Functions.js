@@ -1,0 +1,11 @@
+export default {
+
+	async setOpeningHours(){
+
+
+
+	}
+
+
+
+}

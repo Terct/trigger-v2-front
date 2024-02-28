@@ -1,0 +1,83 @@
+{
+    "boxShadow": "none",
+    "mobileBottomRow": 13,
+    "widgetName": "ButtonGroup2",
+    "isCanvas": false,
+    "dynamicPropertyPathList": [
+        {"key": "groupButtons.groupButton1.onClick"},
+        {"key": "groupButtons.groupButton2.onClick"}
+    ],
+    "displayName": "Button Group",
+    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 26,
+    "bottomRow": 30,
+    "parentRowSpace": 10,
+    "type": "BUTTON_GROUP_WIDGET",
+    "groupButtons": {
+        "groupButton1": {
+            "onClick": "{{\n\n\n\nrequest_start.run(() => {\n\tconst res = request_start.data;\n\tif (res) {\n\n\t\tconsole.log(res)\n\n\t\tshowAlert(\"Iniciado com sucesor\", 'sucess');\n\n\t\tTextStatusTrigger.setText(\"Ativado\");\n\n\t\tTextStatusTrigger.setTextColor(\"#22c55e\")\n\n\n\n\t} else {\n\n\t\tshowAlert(\"Erro ao Iniciar\", 'error');\n\n\t}\n}, (error) => {\n\t// Se ocorrer um erro durante a execução do request_login\n\tconsole.error('Erro durante a execução do request_start:', error);\n\tshowAlert(\"Erro ao Iniciar\", 'error');\n});\n\n\n}}",
+            "buttonType": "SIMPLE",
+            "iconName": "play",
+            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 0,
+            "label": "INICIAR",
+            "id": "groupButton1",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "groupButton2": {
+            "onClick": "{{\n\n\n\nrequest_stop.run(() => {\n\tconst res = request_stop.data;\n\tif (res) {\n\n\t\tconsole.log(res)\n\n\t\tshowAlert(\"Iniciado com sucesor\", 'sucess');\n\n\t\tTextStatusTrigger.setText(\"Desativado\");\n\n\t\tTextStatusTrigger.setTextColor(\"#fa0000\")\n\n\n\n\t} else {\n\n\t\tshowAlert(\"Erro ao Pausar\", 'error');\n\n\t}\n}, (error) => {\n\t// Se ocorrer um erro durante a execução do request_login\n\tconsole.error('Erro durante a execução do request_start:', error);\n\tshowAlert(\"Erro ao Pausar\", 'error');\n});\n\n\n}}",
+            "buttonType": "SIMPLE",
+            "iconName": "pause",
+            "buttonColor": "#eab308",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 1,
+            "label": "PAUSAR",
+            "id": "groupButton2",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "hideCard": false,
+    "mobileRightColumn": 54,
+    "animateLoading": true,
+    "parentColumnSpace": 17.66583251953125,
+    "dynamicTriggerPathList": [
+        {"key": "groupButtons.groupButton1.onClick"},
+        {"key": "groupButtons.groupButton2.onClick"}
+    ],
+    "leftColumn": 1,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "groupButtons.groupButton1.buttonColor"}
+    ],
+    "key": "nbcwkmfr3b",
+    "orientation": "horizontal",
+    "isDeprecated": false,
+    "rightColumn": 25,
+    "widgetId": "hu2zdw62dr",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "9r9v2dombw",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 9,
+    "responsiveBehavior": "fill",
+    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
+    "originalTopRow": 26,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 30,
+    "originalBottomRow": 30,
+    "buttonVariant": "SECONDARY"
+}

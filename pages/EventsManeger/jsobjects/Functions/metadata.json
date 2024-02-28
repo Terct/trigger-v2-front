@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "Functions",
+    "pageId": "EventsManeger",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "messages",
+        "value": "[]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "EventsManeger_Functions",
+  "deleted": false,
+  "gitSyncId": "65de0b07e3fc5c361ade6161_65de2290de78514c337461b9"
+}

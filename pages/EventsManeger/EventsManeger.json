@@ -1,0 +1,80 @@
+{
+  "unpublishedPage": {
+    "name": "EventsManeger",
+    "slug": "eventsmaneger",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1190,
+          "containerStyle": "none",
+          "snapRows": 79,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 810,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "EventsManeger_Functions.loading",
+              "name": "Functions.loading",
+              "collectionId": "EventsManeger_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function (time = 3000) {\n  showModal(\"loading\");\n  setTimeout(() => {\n    closeModal(\"loading\");\n  }, time);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "EventsManeger_Functions.serachProfile",
+              "name": "Functions.serachProfile",
+              "collectionId": "EventsManeger_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  request_profile.run(() => {\n    if (request_profile.data) {\n      storeValue(\"events\", request_profile.data.user_profile.triggerForEventos.events);\n    } else {\n      showAlert(\"Erro consultar seus eventos\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_updateMessages:', error);\n    showAlert(\"Erro consultar seus eventos\", 'error');\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "EventsManeger_request_profile",
+              "name": "request_profile",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "EventsManeger",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65de0b07e3fc5c361ade6161_65de2290de78514c337461af"
+}

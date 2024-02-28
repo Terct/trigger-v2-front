@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Functions",
+    "pageId": "TriggerEvents",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "TriggerEvents_Functions",
+  "deleted": false,
+  "gitSyncId": "65b79c4719086d52dd44c77d_65c3855bfb25f0691f38017e"
+}

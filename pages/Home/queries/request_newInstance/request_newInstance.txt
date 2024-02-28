@@ -1,0 +1,6 @@
+{
+
+	"jwt":{{appsmith.store.jwt}},
+	"instanceName": {{InputNewInstnaiceName.text}}
+
+}

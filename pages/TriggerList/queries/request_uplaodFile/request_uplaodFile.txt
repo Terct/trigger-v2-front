@@ -1,0 +1,4 @@
+{
+	"jwt": {{appsmith.store.jwt}},
+	"contacts": {{FilePicker1.files[0].data[0].data}} 
+}

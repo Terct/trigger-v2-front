@@ -1,0 +1,4 @@
+{
+	"jwt": {{appsmith.store.jwt}},
+	"events": {{Functions.newEvent}} 
+}

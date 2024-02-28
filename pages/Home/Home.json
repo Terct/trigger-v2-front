@@ -1,0 +1,146 @@
+{
+  "unpublishedPage": {
+    "name": "Home",
+    "slug": "home",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2160,
+          "containerStyle": "none",
+          "snapRows": 79,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 810,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Home_Functions.getProgress",
+              "name": "Functions.getProgress",
+              "collectionId": "Home_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  request_getProgressList.run(() => {\n    const res = request_getProgressList.data;\n    if (res) {\n      var total = parseInt(res.logsTableCount) + parseInt(res.triggerCount);\n      var progress = res.logsTableCount + \" / \" + total;\n      TextProgressList.setText(progress);\n    } else {\n      showAlert(\"Erro ao consultar os disparadores\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_profile:', error);\n    showAlert(\"Erro ao consultar os disparadores\", 'error');\n  });\n  request_getProgressEvents.run(() => {\n    const res = request_getProgressEvents.data;\n    if (res) {\n      TextProgressEvents.setText(res.logsTableCount.toString());\n    } else {\n      showAlert(\"Erro ao consultar os disparadores\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_profile:', error);\n    showAlert(\"Erro ao consultar os disparadores\", 'error');\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_Functions.getStatus",
+              "name": "Functions.getStatus",
+              "collectionId": "Home_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  request_profile.run(() => {\n    const res = request_profile.data;\n    if (res) {\n      TextStatusTriggerForList.setText(request_profile.data.user_profile.triggerForList.status);\n      if (request_profile.data.user_profile.triggerForList.status == \"Ativado\") {\n        TextStatusTriggerForList.setTextColor(\"#22c55e\");\n      } else {\n        TextStatusTriggerForList.setTextColor(\"#ff0000\");\n      }\n      TextStatusTriggerForEvents.setText(request_profile.data.user_profile.triggerForEventos.status);\n      if (request_profile.data.user_profile.triggerForEventos.status == \"Ativado\") {\n        TextStatusTriggerForEvents.setTextColor(\"#22c55e\");\n      } else {\n        TextStatusTriggerForEvents.setTextColor(\"#ff0000\");\n      }\n    } else {\n      showAlert(\"Erro ao consultar os disparadores\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_profile:', error);\n    showAlert(\"Erro ao consultar os disparadores\", 'error');\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_Functions.loading",
+              "name": "Functions.loading",
+              "collectionId": "Home_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function (time = 3000) {\n  showModal(\"loading\");\n  setTimeout(() => {\n    closeModal(\"loading\");\n  }, time);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Home_request_getProgressEvents",
+              "name": "request_getProgressEvents",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_request_getProgressList",
+              "name": "request_getProgressList",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_request_searchLines",
+              "name": "request_searchLines",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Home_request_getLogs",
+              "name": "request_getLogs",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_request_readQRCode",
+              "name": "request_readQRCode",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.currentApikey",
+                "appsmith.store.currentInstance"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Home_request_profile",
+              "name": "request_profile",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Home",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65b79c4719086d52dd44c77d_65bb881c19086d52dd44c7d6"
+}

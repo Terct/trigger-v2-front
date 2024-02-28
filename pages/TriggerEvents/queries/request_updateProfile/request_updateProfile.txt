@@ -1,0 +1,5 @@
+{
+	"jwt": {{appsmith.store.jwt}},
+	"profile": {{appsmith.store.newProfile[0]}}
+
+}

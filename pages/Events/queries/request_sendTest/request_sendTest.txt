@@ -1,0 +1,10 @@
+{
+	"webhookId":"e6e8ce9d-6ca0-43c7-9a16-c5cee6434456",
+	"messageType": {{SelectTypeTrigger.selectedOptionValue}},
+	"typebotUrl": {{InputUrlFluxo.text}},
+	"variablesTypebot": {{Functions.webhooksDateTransformed}},
+	"selectedVariblesTypebot": {{MultiSelectVariableTypebot.selectedOptionLabels}},
+	"number":{{InputNumberSelected.text}},
+	"messageSelected":{{Functions.testeText}},
+	"instance":{{SelectLine.selectedOptionValue}}
+}
