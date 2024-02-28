@@ -4,6 +4,7 @@
     "widgetName": "Container4",
     "borderColor": "#d4d4d8",
     "isCanvas": true,
+    "dynamicPropertyPathList": [],
     "displayName": "Container",
     "iconSVG": "/static/media/icon.daebf68875b6c8e909e9e8ac8bee0c02.svg",
     "searchTags": [
@@ -12,7 +13,7 @@
         "group"
     ],
     "topRow": 0,
-    "bottomRow": 77,
+    "bottomRow": 64,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -29,7 +30,7 @@
         "widgetName": "Canvas4",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 760,
+        "bottomRow": 630,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
