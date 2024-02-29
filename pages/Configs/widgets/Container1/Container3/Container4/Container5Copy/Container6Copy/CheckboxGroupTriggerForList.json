@@ -24,31 +24,31 @@
     "options": [
         {
             "label": "DOM",
-            "value": "dom"
+            "value": "sun"
         },
         {
             "label": "SEG",
-            "value": "seg"
+            "value": "mon"
         },
         {
             "label": "TER",
-            "value": "ter"
+            "value": "tue"
         },
         {
             "label": "QUA",
-            "value": "qua"
+            "value": "wed"
         },
         {
             "label": "QUI",
-            "value": "qui"
+            "value": "thu"
         },
         {
             "label": "SEX",
-            "value": "sex"
+            "value": "fri"
         },
         {
             "label": "SAB",
-            "value": "sab"
+            "value": "sat"
         }
     ],
     "labelTextColor": "#ffffff",
