@@ -37,9 +37,7 @@
                 "async function (time = 3000) {\n  showModal(\"loading\");\n  setTimeout(() => {\n    closeModal(\"loading\");\n  }, time);\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Events_request_searchWebhookId",
               "name": "request_searchWebhookId",
