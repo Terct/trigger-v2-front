@@ -28,28 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "TriggerEvents_Functions.buscarLinhas",
-              "name": "Functions.buscarLinhas",
-              "collectionId": "TriggerEvents_Functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  request_searchLines.run(() => {\n    const res = request_searchLines.data;\n    if (res) {\n      const modifiedRes = res.map(item => ({\n        ...item,\n        label: `${item.name} - ${item.statusBR}`,\n        value: item.instance\n      }));\n      storeValue(\"lines\", modifiedRes);\n    } else {\n      showAlert(\"Erro ao buscar linhas\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_searchLines:', error);\n    showAlert(\"Erro ao buscar linhas\", 'error');\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "TriggerEvents_Functions.buscarProgresso",
-              "name": "Functions.buscarProgresso",
-              "collectionId": "TriggerEvents_Functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  request_getProgress.run(() => {\n    const res = request_getProgress.data;\n    if (res) {\n      var progress = res.logsTableCount.toString();\n      TextProgress.setText(progress);\n    } else {\n      showAlert(\"Erro ao buscar seu progresso\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_getProgress:', error);\n    showAlert(\"Erro ao buscar seu progresso\", 'error');\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "TriggerEvents_Functions.loading",
               "name": "Functions.loading",
               "collectionId": "TriggerEvents_Functions",
@@ -60,19 +38,6 @@
               ],
               "timeoutInMillisecond": 10000
             },
-            {
-              "id": "TriggerEvents_Functions.searchProfileFunction",
-              "name": "Functions.searchProfileFunction",
-              "collectionId": "TriggerEvents_Functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  request_profile.run(() => {\n    const res = request_profile.data;\n    console.log(res);\n    if (res) {\n      storeValue(\"profile\", res);\n      storeValue(\"messages\", res.user_profile.messages);\n      storeValue(\"events\", res.user_profile.triggerForEventos.events);\n      SelectTypoOfShort.setOptions(appsmith.store.profile.user_profile.triggerForEventos.typeOfShot);\n      SelectLine.setSelectedOption(appsmith.store.profile.user_profile.triggerForEventos.lineSelected);\n      MultiEventos.setSelectedOptions(appsmith.store.profile.user_profile.triggerForEventos.eventsSelecteds);\n      SelectTypoOfShort.setSelectedOption(appsmith.store.profile.user_profile.triggerForEventos.labelTypeOfShot);\n      TextStatusTrigger.setText(appsmith.store.profile.user_profile.triggerForEventos.status);\n      if (appsmith.store.profile.user_profile.triggerForEventos.status == \"Ativado\") {\n        TextStatusTrigger.setTextColor(\"#22c55e\");\n      } else {\n        TextStatusTrigger.setTextColor(\"#ff0000\");\n      }\n    } else {}\n  }, error => {\n    console.error('Erro durante a execução do request_profile:', error);\n  });\n  if (appsmith.store.profile.user_profile.triggerForList.labelTypeOfShot === \"Fixo\") {\n    SelectLine.setDisabled(false);\n  } else {\n    SelectLine.setDisabled(true);\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
             {
               "id": "TriggerEvents_request_getProgress",
               "name": "request_getProgress",
@@ -106,12 +71,47 @@
           ],
           [
             {
+              "id": "TriggerEvents_Functions.buscarProgresso",
+              "name": "Functions.buscarProgresso",
+              "collectionId": "TriggerEvents_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  request_getProgress.run(() => {\n    const res = request_getProgress.data;\n    if (res) {\n      var progress = res.logsTableCount.toString();\n      TextProgress.setText(progress);\n    } else {\n      showAlert(\"Erro ao buscar seu progresso\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_getProgress:', error);\n    showAlert(\"Erro ao buscar seu progresso\", 'error');\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "TriggerEvents_Functions.searchProfileFunction",
+              "name": "Functions.searchProfileFunction",
+              "collectionId": "TriggerEvents_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  request_profile.run(() => {\n    const res = request_profile.data;\n    console.log(res);\n    if (res) {\n      storeValue(\"profile\", res);\n      storeValue(\"messages\", res.user_profile.messages);\n      storeValue(\"events\", res.user_profile.triggerForEventos.events);\n      SelectTypoOfShort.setOptions(appsmith.store.profile.user_profile.triggerForEventos.typeOfShot);\n      SelectLine.setSelectedOption(appsmith.store.profile.user_profile.triggerForEventos.lineSelected);\n      MultiEventos.setSelectedOptions(appsmith.store.profile.user_profile.triggerForEventos.eventsSelecteds);\n      SelectTypoOfShort.setSelectedOption(appsmith.store.profile.user_profile.triggerForEventos.labelTypeOfShot);\n      TextStatusTrigger.setText(appsmith.store.profile.user_profile.triggerForEventos.status);\n      if (appsmith.store.profile.user_profile.triggerForEventos.status == \"Ativado\") {\n        TextStatusTrigger.setTextColor(\"#22c55e\");\n      } else {\n        TextStatusTrigger.setTextColor(\"#ff0000\");\n      }\n    } else {}\n  }, error => {\n    console.error('Erro durante a execução do request_profile:', error);\n  });\n  if (appsmith.store.profile.user_profile.triggerForList.labelTypeOfShot === \"Fixo\") {\n    SelectLine.setDisabled(false);\n  } else {\n    SelectLine.setDisabled(true);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "TriggerEvents_request_getWebookId",
               "name": "request_getWebookId",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "TriggerEvents_Functions.buscarLinhas",
+              "name": "Functions.buscarLinhas",
+              "collectionId": "TriggerEvents_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  request_searchLines.run(() => {\n    const res = request_searchLines.data;\n    if (res) {\n      const modifiedRes = res.map(item => ({\n        ...item,\n        label: `${item.name} - ${item.statusBR}`,\n        value: item.instance\n      }));\n      storeValue(\"lines\", modifiedRes);\n    } else {\n      showAlert(\"Erro ao buscar linhas\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_searchLines:', error);\n    showAlert(\"Erro ao buscar linhas\", 'error');\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }

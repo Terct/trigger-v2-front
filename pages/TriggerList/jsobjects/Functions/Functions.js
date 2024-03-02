@@ -32,8 +32,6 @@ export default {
 				SelectTypoOfShort.setSelectedOption(appsmith.store.profile.user_profile.triggerForList.labelTypeOfShot)
 
 
-
-
 				if(appsmith.store.profile.user_profile.triggerForList.status == "Ativado"){
 
 					TextStatusTrigger.setTextColor("#22c55e")
@@ -124,7 +122,8 @@ export default {
 
 			{
 				"triggerForList": {
-					"status": "Desativado",
+					"status": appsmith.store.profile.user_profile.triggerForList.status,
+					
 					"interval": appsmith.store.profile.user_profile.triggerForList.interval,
 
 					"typeOfShot": appsmith.store.profile.user_profile.triggerForList.typeOfShot,
@@ -146,7 +145,7 @@ export default {
 
 				"triggerForEventos": {
 
-					"status": "Desativado",
+					"status": appsmith.store.profile.user_profile.triggerForEventos.status,
 
 					"interval": appsmith.store.profile.user_profile.triggerForEventos.interval,
 

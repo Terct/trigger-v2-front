@@ -15,6 +15,7 @@
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
         "groupButtontfozxh1c48": {
+            "onClick": "{{navigateTo('Configs', {}, 'SAME_WINDOW');}}",
             "buttonType": "SIMPLE",
             "buttonColor": "#d4d4d8",
             "widgetId": "zhiax21z1v",
@@ -59,7 +60,8 @@
     "parentColumnSpace": 18.880859375,
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"}
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButtontfozxh1c48.onClick"}
     ],
     "leftColumn": 35,
     "dynamicBindingPathList": [],
