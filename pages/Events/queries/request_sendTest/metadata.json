@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"webhookId\":\"e6e8ce9d-6ca0-43c7-9a16-c5cee6434456\",\n\t\"messageType\": {{SelectTypeTrigger.selectedOptionValue}},\n\t\"typebotUrl\": {{InputUrlFluxo.text}},\n\t\"variablesTypebot\": {{Functions.webhooksDateTransformed}},\n\t\"selectedVariblesTypebot\": {{MultiSelectVariableTypebot.selectedOptionLabels}},\n\t\"number\":{{InputNumberSelected.text}},\n\t\"messageSelected\":{{Functions.testeText}},\n\t\"instance\":{{SelectLine.selectedOptionValue}}\n}\n",
+      "body": "{\n\t\"webhookId\": {{appsmith.store.webhookId}},\n\t\"messageType\": {{SelectTypeTrigger.selectedOptionValue}},\n\t\"typebotUrl\": {{InputUrlFluxo.text}},\n\t\"variablesTypebot\": {{Functions.webhooksDateTransformed}},\n\t\"selectedVariblesTypebot\": {{MultiSelectVariableTypebot.selectedOptionLabels}},\n\t\"number\":{{InputNumberSelected.text}},\n\t\"messageSelected\":{{Functions.testeText}},\n\t\"instance\":{{SelectLine.selectedOptionValue}}\n}\n",
       "bodyFormData": [],
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
@@ -57,7 +57,8 @@
       "InputUrlFluxo.text",
       "MultiSelectVariableTypebot.selectedOptionLabels",
       "SelectLine.selectedOptionValue",
-      "SelectTypeTrigger.selectedOptionValue"
+      "SelectTypeTrigger.selectedOptionValue",
+      "appsmith.store.webhookId"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
