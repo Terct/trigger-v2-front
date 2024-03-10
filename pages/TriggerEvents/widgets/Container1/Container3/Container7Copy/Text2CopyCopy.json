@@ -13,7 +13,7 @@
         {"key": "borderRadius"},
         {"key": "text"}
     ],
-    "text": "https://d24xbzj6-61518.brs.devtunnels.ms/webhook/{{request_getWebookId.data.webhook_id}}",
+    "text": "{{request_searchConfigsServer.data.serverUrlServer}}/webhook/{{request_getWebookId.data.webhook_id}}",
     "disableLink": true,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
@@ -27,7 +27,7 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 21,
+    "originalBottomRow": 34,
     "fontSize": "1rem",
     "mobileBottomRow": 6,
     "widgetName": "Text2CopyCopy",

@@ -6,9 +6,13 @@ export default {
 	testeText:"",
 	newEvent: {},
 
-	async connectWebSocketOpen() {
+async connectWebSocketOpen() {
 
-		const socket = new WebSocket(`wss://d24xbzj6-61516.brs.devtunnels.ms/${appsmith.store.webhookId}`);
+		const socket = new WebSocket(`wss://${request_searchConfigsServer.data.serverUrlWebhoosTest.replace("https://", "").replace("http://", "")}/${appsmith.store.webhookId}`);
+
+		socket.onopen = () => {
+			console.log('Conexão estabelecida com sucesso.');
+		};
 
 		socket.onopen = () => {
 			console.log('Conexão estabelecida com sucesso.');

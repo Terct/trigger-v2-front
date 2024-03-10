@@ -39,6 +39,18 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "TriggerEvents_request_searchConfigsServer",
+              "name": "request_searchConfigsServer",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "TriggerEvents_request_getProgress",
               "name": "request_getProgress",
               "confirmBeforeExecute": false,

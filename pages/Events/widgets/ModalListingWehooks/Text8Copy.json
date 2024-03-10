@@ -27,7 +27,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "https://d24xbzj6-61518.brs.devtunnels.ms/webhook/{{request_getWebookId.data.webhook_id}}",
+    "text": "{{request_searchConfigsServer.data.serverUrlWebhoosTest}}/webhook/{{request_getWebookId.data.webhook_id}}",
     "key": "5i1u5u62o8",
     "isDeprecated": false,
     "rightColumn": 59,

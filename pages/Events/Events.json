@@ -37,6 +37,16 @@
                 "async function (time = 3000) {\n  showModal(\"loading\");\n  setTimeout(() => {\n    closeModal(\"loading\");\n  }, time);\n}"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Events_request_searchConfigsServer",
+              "name": "request_searchConfigsServer",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
