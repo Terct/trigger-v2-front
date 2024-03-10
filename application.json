@@ -31,6 +31,10 @@
     {
       "id": "Configs",
       "isDefault": false
+    },
+    {
+      "id": "Extractor",
+      "isDefault": false
     }
   ],
   "viewMode": false,

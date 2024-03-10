@@ -48,7 +48,9 @@
                 "async function () {\n  request_profile.run(() => {\n    if (request_profile.data) {\n      storeValue(\"events\", request_profile.data.user_profile.triggerForEventos.events);\n    } else {\n      showAlert(\"Erro consultar seus eventos\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_updateMessages:', error);\n    showAlert(\"Erro consultar seus eventos\", 'error');\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "EventsManeger_request_profile",
               "name": "request_profile",
