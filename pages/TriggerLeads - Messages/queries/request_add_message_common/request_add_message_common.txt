@@ -1,0 +1,11 @@
+{
+  "jwt": "{{appsmith.store.jwt}}",
+  "message": {
+
+    "name":"{{InpName_Mensagem_Comum.text}}",
+    "type": "COMUM",
+    "content":"{{InpContent_Mensagem_Comum.text}}"
+
+
+  }
+}

@@ -28,28 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "TriggerList_Functions.buscarLinhas",
-              "name": "Functions.buscarLinhas",
-              "collectionId": "TriggerList_Functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  request_searchLines.run(() => {\n    const res = request_searchLines.data;\n    if (res) {\n      const modifiedRes = res.map(item => ({\n        ...item,\n        label: `${item.name} - ${item.statusBR}`,\n        value: item.instance\n      }));\n      storeValue(\"lines\", modifiedRes);\n    } else {\n      showAlert(\"Erro ao buscar linhas\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_searchLines:', error);\n    showAlert(\"Erro ao buscar linhas\", 'error');\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "TriggerList_Functions.buscarProgresso",
-              "name": "Functions.buscarProgresso",
-              "collectionId": "TriggerList_Functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  request_getProgress.run(() => {\n    const res = request_getProgress.data;\n    if (res) {\n      var total = parseInt(res.logsTableCount) + parseInt(res.triggerCount);\n      var progress = res.logsTableCount + \" / \" + total;\n      TextQtdsItens.setText(total.toString());\n      TextProgress.setText(progress);\n    } else {\n      showAlert(\"Erro ao buscar seu progresso\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_getProgress:', error);\n    showAlert(\"Erro ao buscar seu progresso\", 'error');\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "TriggerList_Functions.loading",
               "name": "Functions.loading",
               "collectionId": "TriggerList_Functions",
@@ -60,19 +38,6 @@
               ],
               "timeoutInMillisecond": 10000
             },
-            {
-              "id": "TriggerList_Functions.searchProfileFunction",
-              "name": "Functions.searchProfileFunction",
-              "collectionId": "TriggerList_Functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  request_profile.run(() => {\n    const res = request_profile.data;\n    console.log(res);\n    if (res) {\n      storeValue(\"profile\", res);\n      storeValue(\"messages\", res.user_profile.messages);\n      selectInterval.setOptions(appsmith.store.profile.user_profile.triggerForList.interval);\n      InputInterval.setValue(appsmith.store.profile.user_profile.triggerForList.intervalSelected);\n      SelectTypoOfShort.setOptions(appsmith.store.profile.user_profile.triggerForList.typeOfShot);\n      SelectLine.setSelectedOption(appsmith.store.profile.user_profile.triggerForList.lineSelected);\n      SelectTypeMessage.setOptions(appsmith.store.profile.user_profile.triggerForList.messageType);\n      MultiSelectMessages.setSelectedOptions(appsmith.store.profile.user_profile.triggerForList.messagesSelected);\n      InputTypebot.setValue(appsmith.store.profile.user_profile.triggerForList.typebot);\n      TextStatusTrigger.setText(appsmith.store.profile.user_profile.triggerForList.status);\n      selectInterval.setSelectedOption(appsmith.store.profile.user_profile.triggerForList.labelIntervalSelected);\n      SelectTypeMessage.setSelectedOption(appsmith.store.profile.user_profile.triggerForList.labelMessageType);\n      SelectTypoOfShort.setSelectedOption(appsmith.store.profile.user_profile.triggerForList.labelTypeOfShot);\n      if (appsmith.store.profile.user_profile.triggerForList.status == \"Ativado\") {\n        TextStatusTrigger.setTextColor(\"#22c55e\");\n      } else {\n        TextStatusTrigger.setTextColor(\"#ff0000\");\n      }\n    } else {}\n  }, error => {\n    console.error('Erro durante a execução do request_profile:', error);\n  });\n  if (appsmith.store.profile.user_profile.triggerForList.labelMessageType === \"Mensagem\") {\n    MultiSelectMessages.setDisabled(false);\n    InputTypebot.setDisabled(true);\n  } else {\n    MultiSelectMessages.setDisabled(true);\n    InputTypebot.setDisabled(false);\n  }\n  if (appsmith.store.profile.user_profile.triggerForList.labelTypeOfShot === \"Fixo\") {\n    SelectLine.setDisabled(false);\n  } else {\n    SelectLine.setDisabled(true);\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
             {
               "id": "TriggerList_request_getProgress",
               "name": "request_getProgress",
@@ -100,6 +65,43 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "TriggerList_Functions.buscarProgresso",
+              "name": "Functions.buscarProgresso",
+              "collectionId": "TriggerList_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  request_getProgress.run(() => {\n    const res = request_getProgress.data;\n    if (res) {\n      var total = parseInt(res.logsTableCount) + parseInt(res.triggerCount);\n      var progress = res.logsTableCount + \" / \" + total;\n      TextQtdsItens.setText(total.toString());\n      TextProgress.setText(progress);\n    } else {\n      showAlert(\"Erro ao buscar seu progresso\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_getProgress:', error);\n    showAlert(\"Erro ao buscar seu progresso\", 'error');\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "TriggerList_Functions.searchProfileFunction",
+              "name": "Functions.searchProfileFunction",
+              "collectionId": "TriggerList_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  request_profile.run(() => {\n    const res = request_profile.data;\n    console.log(res);\n    if (res) {\n      storeValue(\"profile\", res);\n      storeValue(\"messages\", res.user_profile.messages);\n      selectInterval.setOptions(appsmith.store.profile.user_profile.triggerForList.interval);\n      InputInterval.setValue(appsmith.store.profile.user_profile.triggerForList.intervalSelected);\n      SelectTypoOfShort.setOptions(appsmith.store.profile.user_profile.triggerForList.typeOfShot);\n      SelectLine.setSelectedOption(appsmith.store.profile.user_profile.triggerForList.lineSelected);\n      SelectTypeMessage.setOptions(appsmith.store.profile.user_profile.triggerForList.messageType);\n      MultiSelectMessages.setSelectedOptions(appsmith.store.profile.user_profile.triggerForList.messagesSelected);\n      InputTypebot.setValue(appsmith.store.profile.user_profile.triggerForList.typebot);\n      TextStatusTrigger.setText(appsmith.store.profile.user_profile.triggerForList.status);\n      selectInterval.setSelectedOption(appsmith.store.profile.user_profile.triggerForList.labelIntervalSelected);\n      SelectTypeMessage.setSelectedOption(appsmith.store.profile.user_profile.triggerForList.labelMessageType);\n      SelectTypoOfShort.setSelectedOption(appsmith.store.profile.user_profile.triggerForList.labelTypeOfShot);\n      if (appsmith.store.profile.user_profile.triggerForList.status == \"Ativado\") {\n        TextStatusTrigger.setTextColor(\"#22c55e\");\n      } else {\n        TextStatusTrigger.setTextColor(\"#ff0000\");\n      }\n    } else {}\n  }, error => {\n    console.error('Erro durante a execução do request_profile:', error);\n  });\n  if (appsmith.store.profile.user_profile.triggerForList.labelMessageType === \"Mensagem\") {\n    MultiSelectMessages.setDisabled(false);\n    InputTypebot.setDisabled(true);\n  } else {\n    MultiSelectMessages.setDisabled(true);\n    InputTypebot.setDisabled(false);\n  }\n  if (appsmith.store.profile.user_profile.triggerForList.labelTypeOfShot === \"Fixo\") {\n    SelectLine.setDisabled(false);\n  } else {\n    SelectLine.setDisabled(true);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "TriggerList_Functions.buscarLinhas",
+              "name": "Functions.buscarLinhas",
+              "collectionId": "TriggerList_Functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  request_searchLines.run(() => {\n    const res = request_searchLines.data;\n    if (res) {\n      const modifiedRes = res.map(item => ({\n        ...item,\n        label: `${item.name} - ${item.statusBR}`,\n        value: item.instance\n      }));\n      storeValue(\"lines\", modifiedRes);\n    } else {\n      showAlert(\"Erro ao buscar linhas\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_searchLines:', error);\n    showAlert(\"Erro ao buscar linhas\", 'error');\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }

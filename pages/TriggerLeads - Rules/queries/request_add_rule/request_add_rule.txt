@@ -1,0 +1,11 @@
+{
+	"jwt": "{{appsmith.store.jwt}}",
+	"rule": {
+
+	"name":"{{InpName_Rules.text}}",
+	"type": "{{Inptype_Rules.selectedOptionValue}}",
+	"content":"{{InpCondicion_Rules.text}}"
+
+
+}
+}

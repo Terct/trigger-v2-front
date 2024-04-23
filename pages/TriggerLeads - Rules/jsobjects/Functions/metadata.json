@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "Functions",
+    "pageId": "TriggerLeads - Rules",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "data",
+        "value": "[]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "TriggerLeads - Rules_Functions",
+  "deleted": false,
+  "gitSyncId": "65df5cce6b67bc0d7f5c2cb7_661fcebc482c1c4f319d6429"
+}

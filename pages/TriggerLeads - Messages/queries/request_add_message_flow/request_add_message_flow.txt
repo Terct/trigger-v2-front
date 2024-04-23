@@ -1,0 +1,12 @@
+{
+  "jwt": "{{appsmith.store.jwt}}",
+  "message": {
+
+    "name":"{{InpName_Mensagem_Fluxo.text}}",
+    "type": "FLUXO",
+    "variables":"{{InpVariables_Mensagem_Fluxo.text}}",
+    "link_flow": "{{InpLink_Mensagem_Fluxo.text}}"
+
+
+  }
+}

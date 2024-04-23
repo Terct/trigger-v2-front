@@ -25,31 +25,7 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Configs_Functions.search_OpeningHours",
-              "name": "Functions.search_OpeningHours",
-              "collectionId": "Configs_Functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  request_getOpeningHours.run(() => {\n    if (request_getOpeningHours.data) {\n      SwitchTriggerForEvents.setValue(request_getOpeningHours.data.triggerForEvents.status);\n      InputTriggerForEventsStart.setValue(request_getOpeningHours.data.triggerForEvents.timesOfDay.start);\n      InputTriggerForEventsEnd.setValue(request_getOpeningHours.data.triggerForEvents.timesOfDay.end);\n      CheckboxGroupTriggerForEvents.setSelectedOptions(request_getOpeningHours.data.triggerForEvents.daysOfWeeks);\n      SwitchTriggerForList.setValue(request_getOpeningHours.data.triggerForList.status);\n      InputTriggerForListStart.setValue(request_getOpeningHours.data.triggerForList.timesOfDay.start);\n      InputTriggerForListEnd.setValue(request_getOpeningHours.data.triggerForList.timesOfDay.end);\n      CheckboxGroupTriggerForList.setSelectedOptions(request_getOpeningHours.data.triggerForList.daysOfWeeks);\n    } else {\n      showAlert(\"Erro ao buscar horario de funcionamento\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_getOpeningHours:', error);\n    showAlert(\"Erro ao buscar horario de funcionamento\", 'error');\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Configs_request_getOpeningHours",
-              "name": "request_getOpeningHours",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.jwt"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Configs",

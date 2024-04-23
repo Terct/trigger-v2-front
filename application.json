@@ -35,6 +35,18 @@
     {
       "id": "Extractor",
       "isDefault": false
+    },
+    {
+      "id": "TriggerLeads",
+      "isDefault": false
+    },
+    {
+      "id": "TriggerLeads - Messages",
+      "isDefault": false
+    },
+    {
+      "id": "TriggerLeads - Rules",
+      "isDefault": false
     }
   ],
   "viewMode": false,

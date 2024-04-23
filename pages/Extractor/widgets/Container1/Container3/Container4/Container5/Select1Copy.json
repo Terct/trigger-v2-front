@@ -8,7 +8,7 @@
     "serverSideFiltering": false,
     "defaultOptionValue": "GREEN",
     "animateLoading": true,
-    "leftColumn": 19,
+    "leftColumn": 11,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"}
@@ -56,7 +56,7 @@
     "key": "rg5duzuv8n",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 49,
+    "rightColumn": 53,
     "widgetId": "w1f5d5zlqk",
     "optionValue": "code",
     "minWidth": 450,
