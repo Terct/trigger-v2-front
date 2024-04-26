@@ -11,10 +11,11 @@
     "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "isDisabled"}
     ],
     "placeholderText": "Select option",
-    "isDisabled": false,
+    "isDisabled": "{{\nInpCondicion_Rules.text.length === 0 \n}}",
     "isRequired": true,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -31,7 +32,10 @@
     "mobileBottomRow": 17,
     "widgetName": "Inp_combine_condition",
     "isFilterable": false,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
+    "dynamicPropertyPathList": [
+        {"key": "sourceData"},
+        {"key": "isDisabled"}
+    ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 9,
