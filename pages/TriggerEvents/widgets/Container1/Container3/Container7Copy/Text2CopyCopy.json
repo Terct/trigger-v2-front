@@ -27,7 +27,7 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 34,
+    "originalBottomRow": 21,
     "fontSize": "1rem",
     "mobileBottomRow": 6,
     "widgetName": "Text2CopyCopy",

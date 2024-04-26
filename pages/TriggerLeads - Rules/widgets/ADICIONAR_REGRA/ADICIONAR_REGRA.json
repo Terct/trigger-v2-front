@@ -78,7 +78,7 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "mobileTopRow": 13,
-    "onClose": "{{Functions.closeSpace();}}",
+    "onClose": "{{request_getRules.run()}}",
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 21,
     "maxDynamicHeight": 9000,
