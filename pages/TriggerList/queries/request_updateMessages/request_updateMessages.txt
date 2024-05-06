@@ -1,7 +1,0 @@
-{
-
-	"jwt":{{appsmith.store.jwt}},
-	"messages": {{appsmith.store.messages}}
-	
-
-}

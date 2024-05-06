@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 7,
     "widgetName": "Button4Copy2",
-    "onClick": "{{\nTextProgress.setText(\"VERIFICANDO...\")\nFunctions.buscarProgresso()\n\n}}",
+    "onClick": "{{\n\nrequest_getProgress.run()\n}}",
     "buttonColor": "#3b82f6",
     "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",

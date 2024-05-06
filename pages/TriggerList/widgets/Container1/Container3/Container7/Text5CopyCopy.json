@@ -20,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 17.66583251953125,
     "dynamicTriggerPathList": [],
-    "leftColumn": 34,
+    "leftColumn": 49,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -31,7 +31,7 @@
     "text": "MENSAGENS",
     "key": "9ztmzt9shu",
     "isDeprecated": false,
-    "rightColumn": 46,
+    "rightColumn": 61,
     "backgroundColor": "#14144d",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",

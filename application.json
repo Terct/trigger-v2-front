@@ -21,10 +21,6 @@
       "isDefault": false
     },
     {
-      "id": "Messages",
-      "isDefault": false
-    },
-    {
       "id": "EventsManeger",
       "isDefault": false
     },
@@ -41,7 +37,7 @@
       "isDefault": false
     },
     {
-      "id": "TriggerLeads - Messages",
+      "id": "Geral Messages",
       "isDefault": false
     },
     {

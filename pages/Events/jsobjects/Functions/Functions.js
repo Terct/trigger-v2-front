@@ -6,13 +6,13 @@ export default {
 	testeText:"",
 	newEvent: {},
 
-async connectWebSocketOpen() {
+	async connectWebSocketOpen() {
 
-		const socket = new WebSocket(`wss://${request_searchConfigsServer.data.serverUrlWebhoosTest.replace("https://", "").replace("http://", "")}/${appsmith.store.webhookId}`);
+		const socket = new WebSocket(`wss://${request_searchConfigsServer.data.triggerEvents.Configs.urlWebsocket.replace("https://", "").replace("http://", "")}/${request_searchWebhookId.data.webhook_id}`);
 
-		socket.onopen = () => {
-			console.log('Conexão estabelecida com sucesso.');
-		};
+  const cookieHeaderValue = "code-server-session=%24argon2id%24v%3D19%24m%3D65536%2Ct%3D3%2Cp%3D4%24AtRzKzvIuOSCQh%2Bgb6Tm7A%24%2BxLegsSwPYW2NyBdHWH4GOPMC9NTXnY66kFSj8bZVvw";
+
+		//console.log(`wss://${request_searchConfigsServer.data.triggerEvents.Configs.urlWebsocket.replace("https://", "").replace("http://", "")}/${request_searchWebhookId.data.webhook_id}`)
 
 		socket.onopen = () => {
 			console.log('Conexão estabelecida com sucesso.');
@@ -90,27 +90,6 @@ async connectWebSocketOpen() {
 
 	},
 
-
-	async buscarWebooks() {
-
-		request_searchWebhookId.run(() => {
-
-			if (request_searchWebhookId.data) {
-
-				storeValue("webhookId", request_searchWebhookId.data.webhook_id)
-
-			}else{
-				showAlert("Erro ao buscar webhooks", 'error')
-			}
-
-		}, (error) => {
-			// Se ocorrer um erro durante a execução do request_login
-			console.error('Erro durante a execução do request_searchWebhookIde:', error);
-			showAlert("Erro ao buscar webhooks", 'error')
-
-		})
-
-	},
 
 	modificarJSON(data) {
 		const params = [];
@@ -361,6 +340,33 @@ async connectWebSocketOpen() {
 		}
 
 	},
+
+
+async TEsteconnectWebSocketOpenTeste() {
+    const cookieHeaderValue = "code-server-session=%24argon2id%24v%3D19%24m%3D65536%2Ct%3D3%2Cp%3D4%24AtRzKzvIuOSCQh%2Bgb6Tm7A%24%2BxLegsSwPYW2NyBdHWH4GOPMC9NTXnY66kFSj8bZVvw";
+
+    const socket = new WebSocket(`wss://${request_searchConfigsServer.data.triggerEvents.Configs.urlWebsocket.replace("https://", "").replace("http://", "")}/${request_searchWebhookId.data.webhook_id}`, {
+        headers: {
+            Cookie: cookieHeaderValue
+        }
+    });
+
+    socket.onopen = () => {
+        console.log('Conexão estabelecida com sucesso.');
+    };
+
+    socket.onmessage = (event) => {
+        // seu código para manipular mensagens recebidas
+    };
+
+    socket.onerror = (error) => {
+        console.error('Erro na conexão WebSocket:', error);
+    };
+
+    socket.onclose = () => {
+        // seu código para lidar com o fechamento da conexão
+    };
+}
 
 
 

@@ -23,11 +23,12 @@
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "text"}
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "VERIFICANDO...",
+    "text": "{{\nrequest_getProfile.data.System.status || \"Erro ao buscar dados\"\n\n}}",
     "key": "9ztmzt9shu",
     "isDeprecated": false,
     "rightColumn": 62,
@@ -52,7 +53,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 14,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 7,
+    "originalBottomRow": 5,
     "fontSize": "1.25rem",
     "minDynamicHeight": 4
 }

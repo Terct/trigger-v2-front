@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "Functions",
+    "pageId": "Geral Messages",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "data",
+        "value": "[]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Geral Messages_Functions",
+  "deleted": false,
+  "gitSyncId": "65df5cce6b67bc0d7f5c2cb7_661e6736e8c3d412fe043812"
+}

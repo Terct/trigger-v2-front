@@ -9,7 +9,7 @@
         "label"
     ],
     "topRow": 14,
-    "bottomRow": 19,
+    "bottomRow": 18,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -27,7 +27,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{request_searchConfigsServer.data.serverUrlWebhoosTest}}/webhook/{{request_getWebookId.data.webhook_id}}",
+    "text": "{{request_searchConfigsServer.data.triggerEvents.Configs.urlWebsocket  + \"/webhook/\" + request_getWebookId.data.webhook_id}}",
     "key": "5i1u5u62o8",
     "isDeprecated": false,
     "rightColumn": 59,

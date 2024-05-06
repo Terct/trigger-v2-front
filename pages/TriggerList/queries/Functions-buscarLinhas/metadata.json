@@ -16,13 +16,13 @@
     "pageId": "TriggerList",
     "collectionId": "TriggerList_Functions",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -31,13 +31,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-02-04T11:45:12Z"
+    "createdAt": "2024-04-28T18:33:55Z"
   },
   "id": "TriggerList_Functions.buscarLinhas",
   "deleted": false,
-  "gitSyncId": "65b79c4719086d52dd44c77d_65bf78c819086d52dd44c887"
+  "gitSyncId": "65df5cce6b67bc0d7f5c2cb7_dab41336-3820-4d81-8057-38e9ef858ae2"
 }

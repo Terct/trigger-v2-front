@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2080,
+          "bottomRow": 2160,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -51,37 +51,12 @@
           ],
           [
             {
-              "id": "Events_request_searchWebhookId",
-              "name": "request_searchWebhookId",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.jwt"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Events_request_getWebookId",
               "name": "request_getWebookId",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.jwt"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Events_Functions.buscarWebooks",
-              "name": "Functions.buscarWebooks",
-              "collectionId": "Events_Functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  request_searchWebhookId.run(() => {\n    if (request_searchWebhookId.data) {\n      storeValue(\"webhookId\", request_searchWebhookId.data.webhook_id);\n    } else {\n      showAlert(\"Erro ao buscar webhooks\", 'error');\n    }\n  }, error => {\n    console.error('Erro durante a execução do request_searchWebhookIde:', error);\n    showAlert(\"Erro ao buscar webhooks\", 'error');\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }
