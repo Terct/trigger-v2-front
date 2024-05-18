@@ -23,11 +23,12 @@
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "text"}
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "VERIFICANDO...",
+    "text": "{{\n\nrequest_getProfile_List.data.System.status\n}}",
     "key": "9ztmzt9shu",
     "isDeprecated": false,
     "rightColumn": 55,

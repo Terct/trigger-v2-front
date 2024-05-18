@@ -12,8 +12,8 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
+        {"key": "defaultOptionValue"},
+        {"key": "sourceData"}
     ],
     "placeholderText": "Select option(s)",
     "isDisabled": false,
@@ -43,13 +43,13 @@
     "dynamicTriggerPathList": [],
     "labelPosition": "Top",
     "labelTextColor": "#ffffff",
-    "sourceData": "{{appsmith.store.events}}",
+    "sourceData": "{{request_getEvents.data}}",
     "key": "djwtgo48yd",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
     "rightColumn": 55,
     "widgetId": "zfnlbvtnl1",
-    "optionValue": "name",
+    "optionValue": "id",
     "minWidth": 450,
     "parentId": "2nv6cbjeee",
     "labelAlignment": "left",

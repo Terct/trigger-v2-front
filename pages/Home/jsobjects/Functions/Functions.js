@@ -71,9 +71,6 @@ export default {
 
 	},
 
-
-
-
 	async desconectInstance (instance, apikey) {
 
 		storeValue("currentInstance", instance)
@@ -138,111 +135,6 @@ export default {
 
 
 
-	async getStatus(){
-
-
-		request_profile.run(() => {
-
-			const res = request_profile.data
-
-			//console.log(res)
-
-			if (res) {
-				//storeValue("profile", newProfile)
-				//showAlert("Instancia reiniciado com sucesso", 'success')
-
-				TextStatusTriggerForList.setText(request_profile.data.user_profile.triggerForList.status)
-				if(request_profile.data.user_profile.triggerForList.status == "Ativado"){
-					TextStatusTriggerForList.setTextColor("#22c55e")
-				}else{
-					TextStatusTriggerForList.setTextColor("#ff0000")
-				}
-
-				TextStatusTriggerForEvents.setText(request_profile.data.user_profile.triggerForEventos.status)
-				if(request_profile.data.user_profile.triggerForEventos.status == "Ativado"){
-					TextStatusTriggerForEvents.setTextColor("#22c55e")
-				}else{
-					TextStatusTriggerForEvents.setTextColor("#ff0000")
-
-				}
-
-			}else{
-				showAlert("Erro ao consultar os disparadores", 'error')
-			}
-
-		}, (error) => {
-			// Se ocorrer um erro durante a execução do request_login
-			console.error('Erro durante a execução do request_profile:', error);
-			showAlert("Erro ao consultar os disparadores", 'error')
-
-		})
-
-
-	},
-
-
-
-	async getProgress(){
-
-		request_getProgressList.run(() => {
-
-			const res = request_getProgressList.data
-
-			//console.log(res)
-
-			if (res) {
-				//storeValue("profile", newProfile)
-				//showAlert("Instancia reiniciado com sucesso", 'success')
-				var total = parseInt(res.logsTableCount) + parseInt(res.triggerCount);
-
-				var progress = res.logsTableCount + " / " + total
-
-				//console.log(progress)
-
-				TextProgressList.setText(progress)
-
-
-			}else{
-				showAlert("Erro ao consultar os disparadores", 'error')
-			}
-
-		}, (error) => {
-			// Se ocorrer um erro durante a execução do request_login
-			console.error('Erro durante a execução do request_profile:', error);
-			showAlert("Erro ao consultar os disparadores", 'error')
-
-		});
-
-
-		request_getProgressEvents.run(() => {
-
-			const res = request_getProgressEvents.data
-
-			//console.log(res)
-
-			if (res) {
-				//storeValue("profile", newProfile)
-				//showAlert("Instancia reiniciado com sucesso", 'success')
-
-
-				TextProgressEvents.setText(res.logsTableCount.toString())
-
-
-			}else{
-				showAlert("Erro ao consultar os disparadores", 'error')
-			}
-
-		}, (error) => {
-			// Se ocorrer um erro durante a execução do request_login
-			console.error('Erro durante a execução do request_profile:', error);
-			showAlert("Erro ao consultar os disparadores", 'error')
-
-		})
-
-
-	},
-
-
 	async  loading(time = 3000) {
 		showModal("loading");
 
@@ -253,7 +145,7 @@ export default {
 	},
 
 
-		async criarInstancia(name){
+	async criarInstancia(name){
 
 		if( name.split(" ").length -1 == 0 && name !== "" ){
 
@@ -297,8 +189,6 @@ export default {
 	},
 	
 	
-	
-	
 	async replaceSpace(){
 		
 		
@@ -307,8 +197,6 @@ export default {
 
 		
 	}
-
-
 
 
 }

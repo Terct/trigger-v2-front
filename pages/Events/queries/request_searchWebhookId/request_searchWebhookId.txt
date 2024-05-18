@@ -1,5 +1,0 @@
-{
-	
-	"jwt": {{appsmith.store.jwt}}
-	
-}

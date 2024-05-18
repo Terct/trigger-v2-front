@@ -1,4 +1,35 @@
 {
-	"jwt": {{appsmith.store.jwt}},
-	"events": {{Functions.newEvent}} 
+    "jwt": {{appsmith.store.jwt}},
+    "event": {
+		"name": '{{InputEventName.text}}',
+		"id": {{ (Math.random().toString(36).substring(2, 4) + Math.random().toString().substring(2, 4)).toUpperCase() + "-" + new Date().toISOString().slice(0,10).split("-").join("") + new Date().toTimeString().slice(0,5).split(":").join("") }},
+        "Verification": {
+            "status": {{SwitchCondicional.isSwitchedOn}},
+            "type": {{SelectTypeTrigger.selectedOptionValue}},
+            "Condition": {
+                "operator": "=",
+                "Inputs": [
+                    {
+                        "value": {{SelectIndentificador.selectedOptionValue}}
+                    },
+                    {
+                        "value": {{InputValorCondicao.text}}
+                    }
+                ]
+            }
+           
+        },
+        "Content": {
+            "COMUM": {
+                "content": {{RichTextEvent.text}}
+            },
+            "FLUXO": {
+                "content": {{InputUrlFluxo.text}}
+            }
+        },
+        "Recipient": {
+            "type": "variable",
+            "content": {{SelectValuePhone.selectedOptionValue}}
+        }
+    }
 }

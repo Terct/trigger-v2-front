@@ -19,7 +19,7 @@
     "isRequired": false,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
+    "isVisible": false,
     "version": 1,
     "tags": ["Select"],
     "isLoading": false,

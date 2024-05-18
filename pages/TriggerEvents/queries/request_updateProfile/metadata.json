@@ -36,8 +36,8 @@
           "value": "{{this.params.line}}"
         },
         {
-          "key": "message",
-          "value": "{{this.params.message}}"
+          "key": "events",
+          "value": "{{this.params.events}}"
         }
       ],
       "body": "{\n  \"jwt\": \"{{appsmith.store.jwt}}\"\n}",
@@ -77,8 +77,8 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.jwt",
+      "this.params.events",
       "this.params.line",
-      "this.params.message",
       "this.params.typeTrigger"
     ],
     "userSetOnLoad": false,

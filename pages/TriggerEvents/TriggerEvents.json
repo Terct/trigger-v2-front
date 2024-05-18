@@ -51,6 +51,28 @@
           ],
           [
             {
+              "id": "TriggerEvents_request_getEvents",
+              "name": "request_getEvents",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "TriggerEvents_request_searchLines",
+              "name": "request_searchLines",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "TriggerEvents_request_getProgress",
               "name": "request_getProgress",
               "confirmBeforeExecute": false,

@@ -40,7 +40,7 @@
     "parentColumnSpace": 8.285674571990967,
     "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Top",
-    "sourceData": "[\n    {\n        \"name\": \"Mensagem Personalizada\",\n        \"value\": \"mensagem\"\n    },\n    {\n        \"name\": \"Fluxo do Typebot\",\n        \"value\": \"typebot\"\n    }\n]",
+    "sourceData": "[\n    {\n        \"name\": \"Mensagem Personalizada\",\n        \"value\": \"COMUM\"\n    },\n    {\n        \"name\": \"Fluxo do Typebot\",\n        \"value\": \"FLUXO\"\n    }\n]",
     "key": "rw1qomuy9n",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,

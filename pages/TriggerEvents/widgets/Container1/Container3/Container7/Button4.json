@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 7,
     "widgetName": "Button4",
-    "onClick": "{{request_updateProfile.run({\n  \"typeTrigger\": SelectTypoOfShort.selectedOptionValue,\n  \"line\": SelectLine.selectedOptionValue,\n  \"message\": MultiEventos.selectedOptionValues\n}).then(() => {\n  showAlert(request_updateProfile.data.message, 'success');\n}).catch(() => {\n  showAlert(request_updateProfile.data.message, 'error');\n});}}",
+    "onClick": "{{request_updateProfile.run({\n  \"typeTrigger\": SelectTypoOfShort.selectedOptionValue,\n  \"line\": SelectLine.selectedOptionValue,\n  \"events\": MultiEventos.selectedOptionValues\n}).then(() => {\n  showAlert(request_updateProfile.data.message, 'success');\n}).catch(() => {\n  showAlert(request_updateProfile.data.message, 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [],
     "displayName": "Button",

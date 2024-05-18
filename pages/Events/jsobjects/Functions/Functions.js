@@ -8,11 +8,10 @@ export default {
 
 	async connectWebSocketOpen() {
 
-		const socket = new WebSocket(`wss://${request_searchConfigsServer.data.triggerEvents.Configs.urlWebsocket.replace("https://", "").replace("http://", "")}/${request_searchWebhookId.data.webhook_id}`);
-
-  const cookieHeaderValue = "code-server-session=%24argon2id%24v%3D19%24m%3D65536%2Ct%3D3%2Cp%3D4%24AtRzKzvIuOSCQh%2Bgb6Tm7A%24%2BxLegsSwPYW2NyBdHWH4GOPMC9NTXnY66kFSj8bZVvw";
+		const socket = new WebSocket(`wss://${request_searchConfigsServer.data.triggerEvents.Configs.urlWebsocket.replace("https://", "").replace("http://", "")}/${request_getWebookId.data.webhook_id}`);
 
 		//console.log(`wss://${request_searchConfigsServer.data.triggerEvents.Configs.urlWebsocket.replace("https://", "").replace("http://", "")}/${request_searchWebhookId.data.webhook_id}`)
+
 
 		socket.onopen = () => {
 			console.log('Conexão estabelecida com sucesso.');
@@ -339,35 +338,7 @@ export default {
 
 		}
 
-	},
-
-
-async TEsteconnectWebSocketOpenTeste() {
-    const cookieHeaderValue = "code-server-session=%24argon2id%24v%3D19%24m%3D65536%2Ct%3D3%2Cp%3D4%24AtRzKzvIuOSCQh%2Bgb6Tm7A%24%2BxLegsSwPYW2NyBdHWH4GOPMC9NTXnY66kFSj8bZVvw";
-
-    const socket = new WebSocket(`wss://${request_searchConfigsServer.data.triggerEvents.Configs.urlWebsocket.replace("https://", "").replace("http://", "")}/${request_searchWebhookId.data.webhook_id}`, {
-        headers: {
-            Cookie: cookieHeaderValue
-        }
-    });
-
-    socket.onopen = () => {
-        console.log('Conexão estabelecida com sucesso.');
-    };
-
-    socket.onmessage = (event) => {
-        // seu código para manipular mensagens recebidas
-    };
-
-    socket.onerror = (error) => {
-        console.error('Erro na conexão WebSocket:', error);
-    };
-
-    socket.onclose = () => {
-        // seu código para lidar com o fechamento da conexão
-    };
-}
-
+	}
 
 
 }
