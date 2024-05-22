@@ -60,6 +60,18 @@
           ],
           [
             {
+              "id": "TriggerLeads_request_searchLines",
+              "name": "request_searchLines",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "TriggerLeads_request_getProgress",
               "name": "request_getProgress",
               "confirmBeforeExecute": false,

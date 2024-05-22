@@ -13,10 +13,11 @@
         {"key": "accentColor"},
         {"key": "borderRadius"},
         {"key": "defaultOptionValue"},
-        {"key": "sourceData"}
+        {"key": "sourceData"},
+        {"key": "isDisabled"}
     ],
     "placeholderText": "Select option",
-    "isDisabled": false,
+    "isDisabled": "{{\n\nSelectTypoOfShort.selectedOptionValue === \"Randomico\"\n\n}}",
     "isRequired": true,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -33,8 +34,8 @@
     "widgetName": "SelectLine",
     "isFilterable": false,
     "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
+        {"key": "sourceData"},
+        {"key": "isDisabled"}
     ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
@@ -63,6 +64,6 @@
     "originalTopRow": 28,
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Functions.verificarTipoDisparo()}}",
+    "onOptionChange": "",
     "minDynamicHeight": 4
 }

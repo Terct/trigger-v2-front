@@ -96,6 +96,7 @@
     "bottomRow": 62,
     "columnWidthMap": {
         "content_message": 178,
+        "content_status": 167,
         "Erro": 77,
         "error": 85
     },

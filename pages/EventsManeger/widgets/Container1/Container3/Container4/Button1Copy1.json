@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 78,
     "widgetName": "Button1Copy1",
-    "onClick": "{{showModal('creatMessages');}}",
+    "onClick": "{{navigateTo('Events', {}, 'SAME_WINDOW');}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [],
     "displayName": "Button",

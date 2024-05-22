@@ -32,10 +32,7 @@
     "mobileBottomRow": 23,
     "widgetName": "SelectTypoOfShort",
     "isFilterable": false,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
+    "dynamicPropertyPathList": [{"key": "sourceData"}],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 26,
@@ -63,6 +60,6 @@
     "originalTopRow": 19,
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Functions.verificarTipoDisparo()}}",
+    "onOptionChange": "",
     "minDynamicHeight": 4
 }

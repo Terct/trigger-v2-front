@@ -57,6 +57,16 @@
                 "appsmith.store.jwt"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "TriggerList_request_searchLines",
+              "name": "request_searchLines",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [

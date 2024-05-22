@@ -3,10 +3,7 @@
     "mobileBottomRow": 13,
     "widgetName": "ButtonGroup2",
     "isCanvas": false,
-    "dynamicPropertyPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"}
-    ],
+    "dynamicPropertyPathList": [],
     "displayName": "Button Group",
     "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
     "searchTags": [
@@ -19,7 +16,7 @@
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
         "groupButton1": {
-            "onClick": "{{\n\n\n\nrequest_start.run(() => {\n\tconst res = request_start.data;\n\tif (res) {\n\n\t\tconsole.log(res)\n\n\t\tshowAlert(\"Iniciado com sucesor\", 'sucess');\n\n\t\tTextStatusTrigger.setText(\"Ativado\");\n\n\t\tTextStatusTrigger.setTextColor(\"#22c55e\")\n\n\n\n\t} else {\n\n\t\tshowAlert(\"Erro ao Iniciar\", 'error');\n\n\t}\n}, (error) => {\n\t// Se ocorrer um erro durante a execução do request_login\n\tconsole.error('Erro durante a execução do request_start:', error);\n\tshowAlert(\"Erro ao Iniciar\", 'error');\n});\n\n\n}}",
+            "onClick": "{{request_ActiveOrDisable.run({\n  \"status\": \"Ativado\"\n}).then(() => {\n  request_getProfile.run();\n  showAlert('Disparador ativado com sucesso!', 'success');\n}).catch(() => {\n  showAlert(request_ActiveOrDisable.data.message, 'error');\n});}}",
             "buttonType": "SIMPLE",
             "iconName": "play",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -33,7 +30,7 @@
             "isDisabled": false
         },
         "groupButton2": {
-            "onClick": "{{\n\n\n\nrequest_stop.run(() => {\n\tconst res = request_stop.data;\n\tif (res) {\n\n\t\tconsole.log(res)\n\n\t\tshowAlert(\"Iniciado com sucesor\", 'sucess');\n\n\t\tTextStatusTrigger.setText(\"Desativado\");\n\n\t\tTextStatusTrigger.setTextColor(\"#fa0000\")\n\n\n\n\t} else {\n\n\t\tshowAlert(\"Erro ao Pausar\", 'error');\n\n\t}\n}, (error) => {\n\t// Se ocorrer um erro durante a execução do request_login\n\tconsole.error('Erro durante a execução do request_start:', error);\n\tshowAlert(\"Erro ao Pausar\", 'error');\n});\n\n\n}}",
+            "onClick": "{{request_ActiveOrDisable.run({\n  \"status\": \"Desativado\"\n}).then(() => {\n  request_getProfile.run();\n  showAlert('Disparador pausado com sucesso!', 'success');\n}).catch(() => {\n  showAlert(request_ActiveOrDisable.data.message, 'error');\n});}}",
             "buttonType": "SIMPLE",
             "iconName": "pause",
             "buttonColor": "#eab308",

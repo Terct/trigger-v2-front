@@ -88,7 +88,7 @@
     "currentItemsView": "{{[]}}",
     "triggeredItemView": "{{{}}}",
     "widgetName": "List1",
-    "listData": "{{\n\nappsmith.store.events\n\n}}",
+    "listData": "{{\n\nrequest_getEvents.data\n\n}}",
     "displayName": "List",
     "bottomRow": 72,
     "parentRowSpace": 10,

@@ -3,9 +3,9 @@
     "boxShadow": "none",
     "mobileBottomRow": 22,
     "widgetName": "Button6",
-    "onClick": "{{request_removeLogs.run().then(() => {\n\tTextProgress.setText(\"CARREGANDO...\")\n  showAlert('Log limpados com sucesso', 'success');\n  Functions.buscarProgresso();\n}).catch(() => {\n  showAlert('Erro ao limpar dados.', 'error');\n});}}",
+    "onClick": "{{request_removeLogs.run().then(() => {\n  request_getProgress.run();\n  showAlert(request_removeLogs.data.message, 'success');\n}).catch(() => {\n  showAlert(request_removeLogs.data.message, 'error');\n});}}",
     "buttonColor": "#fde047",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
+    "dynamicPropertyPathList": [],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [

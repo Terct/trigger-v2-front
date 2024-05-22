@@ -4,6 +4,7 @@
     "mobileBottomRow": 13,
     "widgetName": "ButtonGroup2",
     "isCanvas": false,
+    "dynamicPropertyPathList": [],
     "displayName": "Button Group",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.ae1401b479d77b1908271bdfed6d12ba.svg",
     "searchTags": [

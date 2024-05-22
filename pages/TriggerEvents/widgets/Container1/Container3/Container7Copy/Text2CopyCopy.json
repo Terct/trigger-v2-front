@@ -13,7 +13,7 @@
         {"key": "borderRadius"},
         {"key": "text"}
     ],
-    "text": "{{request_searchConfigsServer.data.serverUrlServer}}/webhook/{{request_getWebookId.data.webhook_id}}",
+    "text": "{{request_searchConfigsServer.data.triggerEvents.Configs.urlEvents}}/webhook/{{request_getWebookId.data.webhook_id}}",
     "disableLink": true,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",

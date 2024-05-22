@@ -32,7 +32,7 @@
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": true,
     "label": "",
-    "defaultSwitchState": "{{currentItem.condition}}",
+    "defaultSwitchState": "{{currentItem.Verification.status }}",
     "version": 1,
     "parentId": "8ym6bzs5ga",
     "tags": ["Toggles"],

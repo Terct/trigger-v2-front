@@ -27,7 +27,7 @@
     "leftColumn": 19,
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{currentItem.typeTrigger}}",
+    "text": "{{currentItem.Verification.type}}",
     "key": "xoyjdv1hmi",
     "isDeprecated": false,
     "rightColumn": 52,
