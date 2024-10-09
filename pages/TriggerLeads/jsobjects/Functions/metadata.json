@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "65df5cce6b67bc0d7f5c2cb7_661e60dcef367c3bfec746ab",
+  "id": "TriggerLeads_Functions",
   "unpublishedCollection": {
     "name": "Functions",
     "pageId": "TriggerLeads",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "data",
         "value": "[]"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "TriggerLeads_Functions",
-  "deleted": false,
-  "gitSyncId": "65df5cce6b67bc0d7f5c2cb7_661e60dcef367c3bfec746ab"
+    ]
+  }
 }

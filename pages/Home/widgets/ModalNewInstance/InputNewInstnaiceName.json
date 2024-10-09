@@ -1,75 +1,91 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 13,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 7,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "validation"}
-    ],
-    "labelStyle": "",
-    "inputType": "TEXT",
-    "maxChars": "30",
-    "isDisabled": false,
-    "validation": "{{\n\nInputNewInstnaiceName.text.split(' ').length === 1 \n\n}}",
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "isVisible": true,
-    "version": 2,
-    "onFocus": "",
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileBottomRow": 18,
-    "widgetName": "InputNewInstnaiceName",
-    "dynamicPropertyPathList": [{"key": "onBlur"}],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 20,
-    "parentRowSpace": 10,
-    "autoFocus": false,
-    "hideCard": false,
-    "mobileRightColumn": 36,
-    "parentColumnSpace": 7.15625,
-    "dynamicTriggerPathList": [
-        {"key": "onTextChanged"},
-        {"key": "onFocus"},
-        {"key": "onBlur"}
-    ],
-    "labelPosition": "Top",
-    "key": "grosw42a12",
-    "labelTextSize": "0.875rem",
-    "onTextChanged": "",
-    "isDeprecated": false,
-    "rightColumn": 60,
-    "widgetId": "vf80r64483",
-    "errorMessage": "Nome Inválido, não use espaço.",
-    "minWidth": 450,
-    "label": "NOME DA INSTÂNCIA",
-    "parentId": "2gsk0nxm63",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 11,
-    "onBlur": "{{\n\n\nInputNewInstnaiceName.setValue(InputNewInstnaiceName.text.replace(/\\s/g, '-')) \n\n}}",
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 16,
-    "maxDynamicHeight": 9000,
-    "iconAlign": "left",
-    "defaultText": "",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "boxShadow": "none",
+  "defaultText": "",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "validation"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
+  "errorMessage": "Nome Inválido, não use espaço.",
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "TEXT",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "grosw42a12",
+  "label": "NOME DA INSTÂNCIA",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 7,
+  "maxChars": "30",
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 36,
+  "mobileTopRow": 11,
+  "onBlur": "{{\n\n\nInputNewInstnaiceName.setValue(InputNewInstnaiceName.text.replace(/\\s/g, '-')) \n\n}}",
+  "onFocus": "",
+  "onTextChanged": "",
+  "parentColumnSpace": 7.15625,
+  "parentId": "2gsk0nxm63",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 13,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{\n\nInputNewInstnaiceName.text.split(' ').length === 1 \n\n}}",
+  "version": 2,
+  "widgetId": "vf80r64483",
+  "widgetName": "InputNewInstnaiceName"
 }

@@ -1,68 +1,80 @@
 {
-    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 11,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 25,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "defaultText"},
-        {"key": "isDisabled"}
-    ],
-    "labelStyle": "",
-    "inputType": "TEXT",
-    "maxChars": "5",
-    "isDisabled": "{{ !SwitchTriggerForEvents.isSwitchedOn }}",
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "isVisible": true,
-    "version": 2,
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "isLoading": false,
-    "regex": "^([01]?[0-9]|2[0-3]):[0-5][0-9]$",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileBottomRow": 10,
-    "widgetName": "InputTriggerForEventsEnd",
-    "dynamicPropertyPathList": [{"key": "isDisabled"}],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 18,
-    "parentRowSpace": 10,
-    "autoFocus": false,
-    "hideCard": false,
-    "mobileRightColumn": 50,
-    "parentColumnSpace": 5.712105423212051,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Top",
-    "key": "xzpyrpz4db",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 61,
-    "widgetId": "8sw07s00zi",
-    "minWidth": 450,
-    "label": "HORARIO FINAL (HH:MM)",
-    "parentId": "nbdyvrlvd8",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 3,
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 30,
-    "maxDynamicHeight": 9000,
-    "iconAlign": "left",
-    "defaultText": "{{request_getOpeningHours.data.triggerForEvents.timesOfDay.end}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 18,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "defaultText": "{{request_getOpeningHours.data.triggerForEvents.timesOfDay.end}}",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "TEXT",
+  "isDeprecated": false,
+  "isDisabled": "{{ !SwitchTriggerForEvents.isSwitchedOn }}",
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "xzpyrpz4db",
+  "label": "HORARIO FINAL (HH:MM)",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 25,
+  "maxChars": "5",
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 3,
+  "parentColumnSpace": 5.712105423212051,
+  "parentId": "nbdyvrlvd8",
+  "parentRowSpace": 10,
+  "regex": "^([01]?[0-9]|2[0-3]):[0-5][0-9]$",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 61,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 11,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "8sw07s00zi",
+  "widgetName": "InputTriggerForEventsEnd"
 }

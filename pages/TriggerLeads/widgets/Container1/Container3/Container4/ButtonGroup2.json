@@ -1,80 +1,94 @@
 {
-    "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-    "mobileBottomRow": 13,
-    "widgetName": "ButtonGroup2",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [],
-    "displayName": "Button Group",
-    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 29,
-    "bottomRow": 33,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButton1": {
-            "onClick": "{{request_ActiveOrDisable.run({\n  \"status\": \"Ativado\"\n}).then(() => {\n  request_profile.run();\n});}}",
-            "buttonType": "SIMPLE",
-            "iconName": "play",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "INICIAR",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{request_ActiveOrDisable.run({\n  \"status\": \"Desativado\"\n}).then(() => {\n  request_profile.run();\n});}}",
-            "buttonType": "SIMPLE",
-            "iconName": "pause",
-            "buttonColor": "#eab308",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "PAUSAR",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 33,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "buttonVariant": "SECONDARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
     },
-    "hideCard": false,
-    "mobileRightColumn": 54,
-    "animateLoading": true,
-    "parentColumnSpace": 17.66583251953125,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"}
-    ],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "groupButtons.groupButton1.buttonColor"}
-    ],
-    "key": "nbcwkmfr3b",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 27,
-    "widgetId": "xrl956nwdw",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "9r9v2dombw",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 9,
-    "responsiveBehavior": "fill",
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 29,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 30,
-    "originalBottomRow": 33,
-    "buttonVariant": "SECONDARY"
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "play",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "INICIAR",
+      "menuItems": {},
+      "onClick": "{{request_ActiveOrDisable.run({\n  \"status\": \"Ativado\"\n}).then(() => {\n  request_profile.run();\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#eab308",
+      "buttonType": "SIMPLE",
+      "iconName": "pause",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "PAUSAR",
+      "menuItems": {},
+      "onClick": "{{request_ActiveOrDisable.run({\n  \"status\": \"Desativado\"\n}).then(() => {\n  request_profile.run();\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nbcwkmfr3b",
+  "leftColumn": 2,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 54,
+  "mobileTopRow": 9,
+  "orientation": "horizontal",
+  "originalBottomRow": 33,
+  "originalTopRow": 29,
+  "parentColumnSpace": 17.66583251953125,
+  "parentId": "9r9v2dombw",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 27,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 29,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "xrl956nwdw",
+  "widgetName": "ButtonGroup2"
 }

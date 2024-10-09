@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "65b79c4719086d52dd44c77d_65c3ffe4fb25f0691f3801a2",
+  "id": "Events_Functions",
   "unpublishedCollection": {
     "name": "Functions",
     "pageId": "Events",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "webhooksDate",
@@ -27,10 +27,6 @@
         "name": "newEvent",
         "value": "{}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Events_Functions",
-  "deleted": false,
-  "gitSyncId": "65b79c4719086d52dd44c77d_65c3ffe4fb25f0691f3801a2"
+    ]
+  }
 }

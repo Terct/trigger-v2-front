@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "65df5cce6b67bc0d7f5c2cb7_65ee1368a1868f58c67211d3",
+  "id": "Extractor_Functions",
   "unpublishedCollection": {
     "name": "Functions",
     "pageId": "Extractor",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "data",
         "value": "[]"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Extractor_Functions",
-  "deleted": false,
-  "gitSyncId": "65df5cce6b67bc0d7f5c2cb7_65ee1368a1868f58c67211d3"
+    ]
+  }
 }

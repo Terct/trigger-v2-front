@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "65df1babf9641d1bd44e99c8_65df2685f9641d1bd44e9a41",
+  "id": "Configs_Functions",
   "unpublishedCollection": {
     "name": "Functions",
     "pageId": "Configs",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "data",
         "value": "[]"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Configs_Functions",
-  "deleted": false,
-  "gitSyncId": "65df1babf9641d1bd44e99c8_65df2685f9641d1bd44e9a41"
+    ]
+  }
 }

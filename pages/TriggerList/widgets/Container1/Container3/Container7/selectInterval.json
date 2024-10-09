@@ -1,68 +1,82 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "TIPO DO INTERVALO",
-    "topRow": 20,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \n\nrequest_profile.data.Profile.typeIntervalSelected\n\n))(selectInterval.options, selectInterval.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 27,
-    "mobileBottomRow": 23,
-    "widgetName": "selectInterval",
-    "isFilterable": false,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 27,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 21,
-    "parentColumnSpace": 17.66583251953125,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Top",
-    "labelTextColor": "#ffffff",
-    "sourceData": "{{\n\nrequest_profile.data.Inputs.interval\n\n}}",
-    "key": "pd33j5vky2",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 18,
-    "widgetId": "mlqepxlwi1",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "2nv6cbjeee",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 16,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 20,
-    "mobileLeftColumn": 1,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 27,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \n\nrequest_profile.data.Profile.typeIntervalSelected\n\n))(selectInterval.options, selectInterval.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "pd33j5vky2",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "TIPO DO INTERVALO",
+  "labelTextColor": "#ffffff",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 23,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 16,
+  "onOptionChange": "{{}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 27,
+  "originalTopRow": 20,
+  "parentColumnSpace": 17.66583251953125,
+  "parentId": "2nv6cbjeee",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 18,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{\n\nrequest_profile.data.Inputs.interval\n\n}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 20,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "mlqepxlwi1",
+  "widgetName": "selectInterval"
 }

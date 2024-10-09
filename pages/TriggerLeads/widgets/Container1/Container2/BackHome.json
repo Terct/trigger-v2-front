@@ -1,42 +1,52 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 7,
-    "widgetName": "BackHome",
-    "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
-    "buttonColor": "#14144d",
-    "displayName": "Icon button",
-    "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 2,
-    "bottomRow": 7,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 23,
-    "animateLoading": true,
-    "parentColumnSpace": 18.568359375,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 22,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "isDisabled": false,
-    "key": "8d965dowb1",
-    "isDeprecated": false,
-    "rightColumn": 26,
-    "iconName": "home",
-    "widgetId": "0asb3aehro",
-    "minWidth": 50,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "llhotlu4qt",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 3,
-    "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 19,
-    "buttonVariant": "PRIMARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "buttonColor": "#14144d",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Icon button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "home",
+  "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "8d965dowb1",
+  "leftColumn": 22,
+  "minWidth": 50,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 3,
+  "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
+  "parentColumnSpace": 18.568359375,
+  "parentId": "llhotlu4qt",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 26,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 2,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "0asb3aehro",
+  "widgetName": "BackHome"
 }

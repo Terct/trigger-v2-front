@@ -1,46 +1,58 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 9,
-    "widgetName": "Switch1",
-    "dynamicPropertyPathList": [{"key": "defaultSwitchState"}],
-    "displayName": "Switch",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.afbd826fee9d09b12c5cde30a8c6fe62.svg",
-    "searchTags": ["boolean"],
-    "topRow": 5,
-    "bottomRow": 9,
-    "parentRowSpace": 10,
-    "type": "SWITCH_WIDGET",
-    "alignWidget": "RIGHT",
-    "hideCard": false,
-    "mobileRightColumn": 29,
-    "animateLoading": true,
-    "parentColumnSpace": 14.744074821472168,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 17,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "defaultSwitchState"}
-    ],
-    "labelPosition": "Left",
-    "isDisabled": true,
-    "key": "eoai27ay10",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 20,
-    "dynamicHeight": "FIXED",
-    "widgetId": "icjnokkedv",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "label": "",
-    "defaultSwitchState": "{{currentItem.Verification.status }}",
-    "version": 1,
-    "parentId": "8ym6bzs5ga",
-    "tags": ["Toggles"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 5,
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 17,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "RIGHT",
+  "animateLoading": true,
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultSwitchState": "{{currentItem.Verification.status }}",
+  "displayName": "Switch",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.afbd826fee9d09b12c5cde30a8c6fe62.svg",
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "eoai27ay10",
+  "label": "",
+  "labelPosition": "Left",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 17,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 5,
+  "parentColumnSpace": 14.744074821472168,
+  "parentId": "8ym6bzs5ga",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 20,
+  "searchTags": [
+    "boolean"
+  ],
+  "tags": [
+    "Toggles"
+  ],
+  "topRow": 5,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "icjnokkedv",
+  "widgetName": "Switch1"
 }

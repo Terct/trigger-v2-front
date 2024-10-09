@@ -1,49 +1,63 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 22,
-    "widgetName": "Button6Copy1",
-    "onClick": "{{request_removeAll.run().then(() => {\n\tTextProgress.setText(\"CARREGANDO...\")\n  showAlert('Dados do progresso limpados com sucesso.', 'success');\n  Functions.buscarProgresso();\n}).catch(() => {\n  showAlert('Erro ao limpar dados.', 'error');\n});}}",
-    "buttonColor": "#231f20",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 34,
-    "bottomRow": 38,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 63,
-    "animateLoading": true,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 17,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "text": "LIMPAR TUDO",
-    "isDisabled": false,
-    "key": "woasl1zzv7",
-    "isDeprecated": false,
-    "rightColumn": 50,
-    "isDefaultClickDisabled": true,
-    "widgetId": "ljmmlsq7cq",
-    "buttonStyle": "PRIMARY_BUTTON",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "ir99k6vxre",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 18,
-    "responsiveBehavior": "hug",
-    "originalTopRow": 34,
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 47,
-    "originalBottomRow": 38,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 38,
+  "boxShadow": "none",
+  "buttonColor": "#231f20",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "woasl1zzv7",
+  "leftColumn": 17,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "onClick": "{{request_removeAll.run().then(() => {\n\tTextProgress.setText(\"CARREGANDO...\")\n  showAlert('Dados do progresso limpados com sucesso.', 'success');\n  Functions.buscarProgresso();\n}).catch(() => {\n  showAlert('Erro ao limpar dados.', 'error');\n});}}",
+  "originalBottomRow": 38,
+  "originalTopRow": 34,
+  "parentId": "ir99k6vxre",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 50,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "LIMPAR TUDO",
+  "topRow": 34,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ljmmlsq7cq",
+  "widgetName": "Button6Copy1"
 }

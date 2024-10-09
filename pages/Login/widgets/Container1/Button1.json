@@ -1,54 +1,68 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 43,
-    "widgetName": "Button1",
-    "onClick": "{{\n\n\n\nrequest_login.run(() => {\n\tconst jwt = request_login.data.token;\n\tconst instancia = request_login.data.instancia;\n\tconst apikey = request_login.data.apikey;\n\n\n\t //console.log(jwt)\n\n\tif (jwt) {\n\n\t\tstoreValue('jwt', jwt);\n\n\n\t\tnavigateTo('Home', {});\n\t} else {\n\t\tshowAlert('Login inválido, verifique suas credenciais', 'error');\n\t}\n}, (error) => {\n\t// Se ocorrer um erro durante a execução do request_login\n\tconsole.error('Erro durante a execução do request_login:', error);\n\tshowAlert(error, 'error');\n});\n\n\n}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 35,
-    "bottomRow": 39,
-    "tooltip": "",
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 54,
-    "animateLoading": false,
-    "parentColumnSpace": 8.385009765625,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 41,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "Login",
-    "isDisabled": false,
-    "key": "711s8jgc5r",
-    "isDeprecated": false,
-    "rightColumn": 57,
-    "isDefaultClickDisabled": true,
-    "widgetId": "v7mjjq32d2",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "7vc2v21v5a",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 39,
-    "responsiveBehavior": "hug",
-    "originalTopRow": 35,
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 38,
-    "originalBottomRow": 39,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 39,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "711s8jgc5r",
+  "leftColumn": 41,
+  "minWidth": 120,
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 38,
+  "mobileRightColumn": 54,
+  "mobileTopRow": 39,
+  "onClick": "{{\n\n\n\nrequest_login.run(() => {\n\tconst jwt = request_login.data.token;\n\tconst instancia = request_login.data.instancia;\n\tconst apikey = request_login.data.apikey;\n\n\n\t //console.log(jwt)\n\n\tif (jwt) {\n\n\t\tstoreValue('jwt', jwt);\n\n\n\t\tnavigateTo('Home', {});\n\t} else {\n\t\tshowAlert('Login inválido, verifique suas credenciais', 'error');\n\t}\n}, (error) => {\n\t// Se ocorrer um erro durante a execução do request_login\n\tconsole.error('Erro durante a execução do request_login:', error);\n\tshowAlert(error, 'error');\n});\n\n\n}}",
+  "originalBottomRow": 39,
+  "originalTopRow": 35,
+  "parentColumnSpace": 8.385009765625,
+  "parentId": "7vc2v21v5a",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 57,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Login",
+  "tooltip": "",
+  "topRow": 35,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "v7mjjq32d2",
+  "widgetName": "Button1"
 }

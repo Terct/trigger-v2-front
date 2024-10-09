@@ -1,62 +1,76 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "TIPO DE DISPARO",
-    "topRow": 4,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "mensagem",
-    "animateLoading": true,
-    "leftColumn": 8,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": true,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 15,
-    "mobileBottomRow": 11,
-    "widgetName": "SelectTypeTrigger",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 11,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 28,
-    "parentColumnSpace": 8.285674571990967,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "sourceData": "[\n    {\n        \"name\": \"Mensagem Personalizada\",\n        \"value\": \"COMUM\"\n    },\n    {\n        \"name\": \"Fluxo do Typebot\",\n        \"value\": \"FLUXO\"\n    }\n]",
-    "key": "rw1qomuy9n",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 50,
-    "widgetId": "vl3vxqplis",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "zc2pqveeag",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 4,
-    "optionLabel": "name",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 8,
-    "mobileLeftColumn": 8,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Functions.verificarTipo();}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "defaultOptionValue": "mensagem",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "rw1qomuy9n",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "TIPO DE DISPARO",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 8,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 4,
+  "onOptionChange": "{{Functions.verificarTipo();}}",
+  "optionLabel": "name",
+  "optionValue": "value",
+  "originalBottomRow": 15,
+  "originalTopRow": 8,
+  "parentColumnSpace": 8.285674571990967,
+  "parentId": "zc2pqveeag",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "[\n    {\n        \"name\": \"Mensagem Personalizada\",\n        \"value\": \"COMUM\"\n    },\n    {\n        \"name\": \"Fluxo do Typebot\",\n        \"value\": \"FLUXO\"\n    }\n]",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 4,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "vl3vxqplis",
+  "widgetName": "SelectTypeTrigger"
 }

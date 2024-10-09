@@ -1,105 +1,119 @@
 {
-    "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-    "mobileBottomRow": 5,
-    "widgetName": "ButtonGroup1",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [],
-    "displayName": "Button Group",
-    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 2,
-    "bottomRow": 7,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButton88rjw9vfwo": {
-            "itemType": "BUTTON",
-            "onClick": "{{navigateTo('TriggerLeads', {}, 'SAME_WINDOW');}}",
-            "buttonColor": "#0c1b46",
-            "widgetId": "e7hyfvfl5v",
-            "menuItems": {},
-            "index": 2,
-            "label": "Disparos por Leads",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "buttonVariant": "filled",
-            "id": "groupButton88rjw9vfwo",
-            "isDisabled": false,
-            "placement": "CENTER"
-        },
-        "groupButtontfozxh1c48": {
-            "onClick": "{{navigateTo('Configs', {}, 'SAME_WINDOW');}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#eab308",
-            "widgetId": "zhiax21z1v",
-            "menuItems": {},
-            "index": 3,
-            "id": "groupButtontfozxh1c48",
-            "label": "Configurações",
-            "isDisabled": false,
-            "isVisible": true,
-            "placement": "CENTER"
-        },
-        "groupButton1": {
-            "onClick": "{{navigateTo('TriggerEvents', {}, 'SAME_WINDOW');}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#14144d",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Disparos por Eventos",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{navigateTo('TriggerList', {}, 'SAME_WINDOW');}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#14144d",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Disparos por Lista",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 7,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
     },
-    "hideCard": false,
-    "mobileRightColumn": 63,
-    "animateLoading": true,
-    "parentColumnSpace": 18.880859375,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButtontfozxh1c48.onClick"},
-        {"key": "groupButtons.groupButton88rjw9vfwo.onClick"}
-    ],
-    "leftColumn": 28,
-    "dynamicBindingPathList": [],
-    "key": "nbcwkmfr3b",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "widgetId": "7v0xkse292",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "llhotlu4qt",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 1,
-    "responsiveBehavior": "fill",
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 29,
-    "borderRadius": "0.375rem",
-    "mobileLeftColumn": 39,
-    "originalBottomRow": 34,
-    "buttonVariant": "PRIMARY"
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtontfozxh1c48.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton88rjw9vfwo.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#14144d",
+      "buttonType": "SIMPLE",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Disparos por Eventos",
+      "menuItems": {},
+      "onClick": "{{navigateTo('TriggerEvents', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#14144d",
+      "buttonType": "SIMPLE",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Disparos por Lista",
+      "menuItems": {},
+      "onClick": "{{navigateTo('TriggerList', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton88rjw9vfwo": {
+      "buttonColor": "#0c1b46",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "id": "groupButton88rjw9vfwo",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Disparos por Leads",
+      "menuItems": {},
+      "onClick": "{{navigateTo('TriggerLeads', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": "e7hyfvfl5v"
+    },
+    "groupButtontfozxh1c48": {
+      "buttonColor": "#eab308",
+      "buttonType": "SIMPLE",
+      "id": "groupButtontfozxh1c48",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Configurações",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Configs', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": "zhiax21z1v"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nbcwkmfr3b",
+  "leftColumn": 28,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 39,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 1,
+  "orientation": "horizontal",
+  "originalBottomRow": 34,
+  "originalTopRow": 29,
+  "parentColumnSpace": 18.880859375,
+  "parentId": "llhotlu4qt",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 2,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "7v0xkse292",
+  "widgetName": "ButtonGroup1"
 }

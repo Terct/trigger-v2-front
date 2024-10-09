@@ -1,51 +1,61 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 7,
-    "widgetName": "Button4",
-    "onClick": "{{request_updateProfile.run({\n  \"typeInterval\": selectInterval.selectedOptionValue,\n  \"interval\": InputInterval.text,\n  \"typeTrigger\": SelectTypoOfShort.selectedOptionValue,\n  \"line\": SelectLine.selectedOptionValue,\n  \"message\": MultiSelectMessages.selectedOptionValues\n}).then(() => {\n  showAlert(request_updateProfile.data.message, 'success');\n}).catch(() => {\n  showAlert(request_updateProfile.data.message, 'error');\n});}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [],
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 2,
-    "bottomRow": 6,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 63,
-    "animateLoading": true,
-    "parentColumnSpace": 17.66583251953125,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 55,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "SALVAR",
-    "isDisabled": false,
-    "key": "jxj5mcmpmd",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "isDefaultClickDisabled": true,
-    "widgetId": "vslqiz65wp",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "2nv6cbjeee",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 3,
-    "responsiveBehavior": "hug",
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 47,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jxj5mcmpmd",
+  "leftColumn": 55,
+  "minWidth": 120,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 3,
+  "onClick": "{{request_updateProfile.run({\n  \"typeInterval\": selectInterval.selectedOptionValue,\n  \"interval\": InputInterval.text,\n  \"typeTrigger\": SelectTypoOfShort.selectedOptionValue,\n  \"line\": SelectLine.selectedOptionValue,\n  \"message\": MultiSelectMessages.selectedOptionValues\n}).then(() => {\n  showAlert(request_updateProfile.data.message, 'success');\n}).catch(() => {\n  showAlert(request_updateProfile.data.message, 'error');\n});}}",
+  "parentColumnSpace": 17.66583251953125,
+  "parentId": "2nv6cbjeee",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "SALVAR",
+  "topRow": 2,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "vslqiz65wp",
+  "widgetName": "Button4"
 }

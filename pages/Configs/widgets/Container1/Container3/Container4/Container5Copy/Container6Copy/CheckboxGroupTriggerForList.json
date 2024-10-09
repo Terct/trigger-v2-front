@@ -1,85 +1,99 @@
 {
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.9522c5e7f896ce165fcd1dbba438daff.svg",
-    "labelText": "",
-    "topRow": 0,
-    "labelWidth": "3",
-    "type": "CHECKBOX_GROUP_WIDGET",
-    "isSelectAll": false,
-    "animateLoading": true,
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "defaultSelectedValues"},
-        {"key": "isDisabled"}
-    ],
-    "options": [
-        {
-            "label": "DOM",
-            "value": "sun"
-        },
-        {
-            "label": "SEG",
-            "value": "mon"
-        },
-        {
-            "label": "TER",
-            "value": "tue"
-        },
-        {
-            "label": "QUA",
-            "value": "wed"
-        },
-        {
-            "label": "QUI",
-            "value": "thu"
-        },
-        {
-            "label": "SEX",
-            "value": "fri"
-        },
-        {
-            "label": "SAB",
-            "value": "sat"
-        }
-    ],
-    "isDisabled": "{{ !SwitchTriggerForList.isSwitchedOn }}",
-    "flexVerticalAlignment": "start",
-    "optionAlignment": "unset",
-    "isRequired": false,
-    "defaultSelectedValues": "{{request_getOpeningHours.data.triggerForList.daysOfWeeks}}",
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 2,
-    "tags": ["Toggles"],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 22,
-    "mobileBottomRow": 25,
-    "widgetName": "CheckboxGroupTriggerForList",
-    "dynamicPropertyPathList": [{"key": "isDisabled"}],
-    "displayName": "Checkbox Group",
-    "bottomRow": 22,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 35,
-    "parentColumnSpace": 7.140273094177246,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Left",
-    "labelTextColor": "#ffffff",
-    "key": "eftmafp329",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 19,
-    "widgetId": "buzf3fivzn",
-    "parentId": "jlj1laqux8",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 19,
-    "originalTopRow": 0,
-    "mobileLeftColumn": 12,
-    "maxDynamicHeight": 9000,
-    "isInline": false,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "defaultSelectedValues": "{{request_getOpeningHours.data.triggerForList.daysOfWeeks}}",
+  "displayName": "Checkbox Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultSelectedValues"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.9522c5e7f896ce165fcd1dbba438daff.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{ !SwitchTriggerForList.isSwitchedOn }}",
+  "isInline": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isSelectAll": false,
+  "isVisible": true,
+  "key": "eftmafp329",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "",
+  "labelTextColor": "#ffffff",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "3",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 25,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 19,
+  "optionAlignment": "unset",
+  "options": [
+    {
+      "label": "DOM",
+      "value": "sun"
+    },
+    {
+      "label": "SEG",
+      "value": "mon"
+    },
+    {
+      "label": "TER",
+      "value": "tue"
+    },
+    {
+      "label": "QUA",
+      "value": "wed"
+    },
+    {
+      "label": "QUI",
+      "value": "thu"
+    },
+    {
+      "label": "SEX",
+      "value": "fri"
+    },
+    {
+      "label": "SAB",
+      "value": "sat"
+    }
+  ],
+  "originalBottomRow": 22,
+  "originalTopRow": 0,
+  "parentColumnSpace": 7.140273094177246,
+  "parentId": "jlj1laqux8",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 19,
+  "tags": [
+    "Toggles"
+  ],
+  "topRow": 0,
+  "type": "CHECKBOX_GROUP_WIDGET",
+  "version": 2,
+  "widgetId": "buzf3fivzn",
+  "widgetName": "CheckboxGroupTriggerForList"
 }
